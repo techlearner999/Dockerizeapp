@@ -1,0 +1,5 @@
+docker build -t helloapp:latest .
+
+docker rm -f helloapp-container||echo "No container to remove"
+
+docker run --name helloapp-container helloapp:latest
